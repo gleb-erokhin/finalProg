@@ -1,5 +1,4 @@
 ﻿string[] str = {"ghj", "12", "55555", "6"};
-
     int count = 0;
     for (int i = 0; i < str.Length; i++)
     {
@@ -9,5 +8,4 @@
             count++;
             Console.WriteLine($"count = {count}");
         }
-
     }
