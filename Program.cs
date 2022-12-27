@@ -17,10 +17,16 @@ foreach(var s in str)
     else continue;
 }
 
-foreach(var el in result)
+
+for(int k = 0; k < result.Length; k++)
 {
-    Console.Write($"{el}, ");
+    if(k == result.Length -1) Console.Write($"{result[k]}");
+    else Console.Write($"{result[k]}, ");
 }
+// foreach(var el in result)
+// {
+//     Console.Write($"{el}, ");
+// }
 
 
     
