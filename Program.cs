@@ -29,8 +29,9 @@ void printArr(string[] result)
 }
 
 
-string[] str = {"ghrrj", "12rr", "55555", "6rrr", "kjkjkj", "drfb", "hrfb"};
+string[] str = {"ghrrj", "12", "55555", "6rr", "kjkjkj", "drf", "hrfb"};
 string[] x = Array(str);
+Console.Write("Результирующий массив: ");
 printArr(x);
 
 
