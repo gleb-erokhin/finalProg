@@ -1,27 +1,42 @@
-﻿string[] str = {"ghrrj", "12rr", "55555", "6rrr", "kjkjkj", "drb", "hrb"};
-int count = 0;
-for (int i = 0; i < str.Length; i++)
+﻿string[] Array(string[] str)
 {
-    if(str[i].Length <= 3) count++; else continue;
-} 
-string[] result = new string[count];
-int index = 0;
-foreach(var s in str)
-{
-    if(s.Length <= 3) 
+    int count = 0;
+    for (int i = 0; i < str.Length; i++)
     {
-        result[index] = s;
-        index++;
-    }    
-    else continue;
+        if(str[i].Length <= 3) count++; else continue;
+    } 
+    string[] result = new string[count];
+    int index = 0;
+    foreach(var s in str)
+    {
+        if(s.Length <= 3) 
+        {
+            result[index] = s;
+            index++;
+        }    
+        else continue;
+    }
+    return result;
 }
 
-
-for(int k = 0; k < result.Length; k++)
+void printArr(string[] result)
 {
-    if(k == result.Length - 1) Console.Write($"{result[k]}");
-    else Console.Write($"{result[k]}, ");
+    for(int k = 0; k < result.Length; k++)
+    {
+        if(k == result.Length - 1) Console.Write($"{result[k]}");
+        else Console.Write($"{result[k]}, ");
+    }
 }
+
+
+string[] str = {"ghrrj", "12rr", "55555", "6rrr", "kjkjkj", "drb", "hrb"};
+string[] x = Array(str);
+printArr(x);
+
+
+
+
+
 // foreach(var el in result)
 // {
 //     Console.Write($"{el}, ");
