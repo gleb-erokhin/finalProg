@@ -29,7 +29,7 @@ void printArr(string[] result)
 }
 
 
-string[] str = {"ghrrj", "12rr", "55555", "6rrr", "kjkjkj", "drb", "hrb"};
+string[] str = {"ghrrj", "12rr", "55555", "6rrr", "kjkjkj", "drfb", "hrfb"};
 string[] x = Array(str);
 printArr(x);
 
